@@ -1,0 +1,70 @@
+.forecastContainer {
+  display: flex;
+}
+
+.currenthourlyForecast {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.dailyForecastContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.dailyForecast {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dailyForecastItems {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dailyForecastImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .forecastContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .currenthourlyForecast {
+    margin: 15px 0px;
+  }
+
+  .dailyForecastContainer {
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .forecastContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .currenthourlyForecast {
+    margin: 15px 0px;
+  }
+
+  .dailyForecastContainer {
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}

@@ -1,0 +1,66 @@
+.currentWeatherContainer {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+  border: 1px solid gray;
+}
+
+.currentWeatherHead {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+}
+.currentWeatherHead > div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: smaller;
+  color: lightgray;
+  margin-top: -25px;
+}
+
+.currentTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentExtraDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.currentCityMap {
+  width: 100%;
+  border: 1px solid yellow;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .currentWeatherContainer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .currentWeatherContainer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+
+  .currentExtraDetails {
+    display: flex;
+    flex-direction: column;
+  }
+}
